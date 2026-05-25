@@ -1,12 +1,12 @@
-# raw data
-main/*.txt
+# raw data files
+data/*.txt
+
+# keep empty data folder
+!data/.gitkeep
 
 # generated outputs
-outputs/
-*.csv
-*.png
-*.jpg
-*.jpeg
+outputs/*
+!outputs/.gitkeep
 
 # Python cache
 __pycache__/
