@@ -6,3 +6,4 @@ tensorflow
 yfinance
 pandas-datareader
 seaborn
+matplotlib
