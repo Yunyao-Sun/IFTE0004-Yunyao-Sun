@@ -1,41 +1,21 @@
 # Volatility Forecasting Project
 
-This project builds one equal-weight intraday index from:
+Reference paper: *A Machine Learning Approach to Volatility Forecasting* by Christensen et al. (2023).
 
-- AAPL.txt
-- AMZN.txt
-- JPM.txt
+This project constructs an equal-weight intraday index from AAPL, AMZN, and JPM, then forecasts realised volatility using HAR-family models, regularised linear models, tree-based models, gradient boosting, and neural networks.
 
-Then it forecasts realized volatility using HAR-family, regularized linear models, tree models, gradient boosting, and neural networks.
+## Data Availability and Reproducibility
 
-## How to run
+Raw high-frequency data files are excluded from this repository due to GitHub file size limits.
 
-Put these files in the same folder as `main.py`:
+To reproduce the results, place the following files in the `main/` folder:
 
-- AAPL.txt
-- AMZN.txt
-- JPM.txt
+- `AAPL.txt`
+- `AMZN.txt`
+- `JPM.txt`
+- `epu.csv`
 
 Then run:
 
 ```bash
-python main.py
-```
-
-Outputs are saved in the `outputs` folder.
-
-## Main setting
-
-Edit `config.py`:
-
-```python
-NN_SEEDS = 5
-```
-
-Use `5` for a quick test. Use `20` or `100` for the final run.
-# IFTE0004-Yunyao-Sun
-Reference paper: A Machine Learning Approach to Volatility Forecasting
-
-Raw high-frequency data files and generated output files are excluded due to file size limits. To reproduce the results, place AAPL.txt, AMZN.txt, and JPM.txt in the same folder as main.py, then run:
-
-python main.py
+python main/main.py
