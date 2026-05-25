@@ -6,17 +6,16 @@ main/JPM.txt
 # optional external data if too large
 # main/epu.csv
 
-# keep main folder and script
-!main/.gitkeep
-!main/main.py
-
-# generated outputs
-outputs/*
-!outputs/.gitkeep
-
 # Python cache
 __pycache__/
 *.pyc
 
 # system files
 .DS_Store
+
+# intermediate output files
+outputs/daily_model_data_*.csv
+outputs/daily_realized_measures_index.csv
+outputs/model_mse_h*.csv
+outputs/pairwise_mse_raw_h*.csv
+outputs/pairwise_mse_table_h*.csv
