@@ -1,0 +1,16 @@
+# raw data
+main/*.txt
+
+# generated outputs
+outputs/
+*.csv
+*.png
+*.jpg
+*.jpeg
+
+# Python cache
+__pycache__/
+*.pyc
+
+# system files
+.DS_Store
