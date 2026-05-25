@@ -4,6 +4,38 @@ Reference paper: *A Machine Learning Approach to Volatility Forecasting* by Chri
 
 This project constructs an equal-weight intraday index from AAPL, AMZN, and JPM, then forecasts realised volatility using HAR-family models, regularised linear models, tree-based models, gradient boosting, and neural networks.
 
+## Project Structure
+
+```text
+.
+├── main/
+│   ├── main.py
+│   ├── epu.csv
+├── outputs/
+│   ├── figure1_model_mse_h1.png
+│   ├── figure1_model_mse_h5.png
+│   ├── figure1_model_mse_h22.png
+│   ├── figure2_pairwise_dm_heatmap_h1.png
+│   ├── figure2_pairwise_dm_heatmap_h5.png
+│   ├── figure2_pairwise_dm_heatmap_h22.png
+│   ├── model_mse_summary_pretty_h1.txt
+│   ├── model_mse_summary_pretty_h5.txt
+│   ├── model_mse_summary_pretty_h22.txt
+│   ├── pairwise_mse_pretty_h1.txt
+│   ├── pairwise_mse_pretty_h5.txt
+│   ├── pairwise_mse_pretty_h22.txt
+│   └── table1_summary_statistics.csv
+├── config.py
+├── data_utils.py
+├── features.py
+├── models.py
+├── evaluation.py
+├── plot_figures.py
+├── requirements.txt
+├── .gitignore
+└── README.md
+
+
 ## Data Availability and Reproducibility
 
 Raw high-frequency data files are excluded from this repository due to GitHub file size limits.
