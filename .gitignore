@@ -1,8 +1,14 @@
-# raw data files
-data/*.txt
+# raw high-frequency data files
+main/AAPL.txt
+main/AMZN.txt
+main/JPM.txt
 
-# keep empty data folder
-!data/.gitkeep
+# optional external data if too large
+# main/epu.csv
+
+# keep main folder and script
+!main/.gitkeep
+!main/main.py
 
 # generated outputs
 outputs/*
