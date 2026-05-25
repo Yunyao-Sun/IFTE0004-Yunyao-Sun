@@ -21,3 +21,4 @@ Then run:
 
 ```bash
 python main/main.py
+```
